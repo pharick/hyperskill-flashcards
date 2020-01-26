@@ -1,0 +1,41 @@
+type: edu
+custom_name: stage3
+files:
+- name: test/FlashcardsTest.java
+  visible: false
+  text: |
+    import common.FlashcardsStage3Test;
+
+    public class FlashcardsTest extends FlashcardsStage3Test {
+        // just empty class, but not abstract so it can be run
+    }
+  learner_created: false
+- name: src/flashcards/Main.java
+  visible: true
+  text: |-
+    package flashcards;
+
+    import java.util.Scanner;
+
+    public class Main {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            String term = scanner.nextLine();
+            String definition = scanner.nextLine();
+
+            System.out.printf("Card:\n%s\nDefinition:\n%s\n", term, definition);
+
+            String answer = scanner.nextLine();
+
+            if (answer.equals(definition)) {
+                System.out.println("Your answer is right!");
+            } else {
+                System.out.println("Your answer is wrong...");
+            }
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/44/stages/234/implement
+status: Solved
+record: 1

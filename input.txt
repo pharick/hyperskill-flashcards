@@ -1,0 +1,15 @@
+Russia
+Moscow
+0
+France
+Paris
+0
+Japan
+Tokio
+1
+England
+London
+1
+Ukraine
+Kiev
+0

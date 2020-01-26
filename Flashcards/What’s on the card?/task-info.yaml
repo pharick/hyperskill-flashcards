@@ -1,0 +1,26 @@
+type: edu
+custom_name: stage2
+files:
+- name: test/FlashcardsTest.java
+  visible: false
+  text: |
+    import common.FlashcardsStage2Test;
+
+    public class FlashcardsTest extends FlashcardsStage2Test {
+        // just empty class, but not abstract so it can be run
+    }
+  learner_created: false
+- name: src/flashcards/Main.java
+  visible: true
+  text: |
+    package flashcards;
+
+    public class Main {
+        public static void main(String[] args) {
+            System.out.println("Card:\nA rectangular arrangement of numbers into rows and columns\nDefinition:\nMatrix");
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/projects/44/stages/233/implement
+status: Solved
+record: 2
